@@ -16,14 +16,19 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:text="Here are your Letters"
-        android:textSize="28sp" />
+        android:textSize="36sp"
+        android:layout_marginBottom="15dp" />
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/tvHeader"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        android:id="@+id/tableLayout"
+        android:layout_above="@+id/tvWordView"
+        android:layout_alignLeft="@+id/tvHeader"
+        android:layout_alignStart="@+id/tvHeader"
+        android:layout_alignRight="@+id/tvHeader"
+        android:layout_alignEnd="@+id/tvHeader">
 
         <TableRow
             android:layout_width="match_parent"
@@ -37,7 +42,8 @@
                 android:textStyle="normal"
                 android:textSize="50sp"
                 android:textColor="@color/colorPrimary"
-                android:layout_weight = "1" />
+                android:layout_weight = "1"
+                android:clickable="true" />
 
             <TextView
                 android:text=""
@@ -47,16 +53,17 @@
                 android:layout_centerHorizontal="true"
                 android:textSize="50sp"
                 android:textColor="@color/colorPrimary"
-                android:layout_weight = "1" />
+                android:layout_weight = "1"
+                android:textAlignment="center" />
 
             <TextView
-                android:text=""
                 android:id="@+id/letter3"
                 android:layout_column="4"
                 android:textStyle="normal"
                 android:textSize="50sp"
                 android:textColor="@color/colorPrimary"
-                android:layout_weight = "1"/>
+                android:layout_weight = "1"
+                android:textAlignment="viewEnd" />
 
 
         </TableRow>
@@ -82,7 +89,8 @@
                 android:layout_centerHorizontal="true"
                 android:textSize="50sp"
                 android:textColor="@color/colorPrimary"
-                android:layout_weight = "1" />
+                android:layout_weight = "1"
+                android:textAlignment="center" />
 
             <TextView
                 android:text=""
@@ -91,7 +99,8 @@
                 android:textStyle="normal"
                 android:textSize="50sp"
                 android:textColor="@color/colorPrimary"
-                android:layout_weight = "1"/>
+                android:layout_weight = "1"
+                android:textAlignment="viewEnd" />
 
 
 
@@ -118,7 +127,8 @@
                 android:layout_centerHorizontal="true"
                 android:textSize="50sp"
                 android:textColor="@color/colorPrimary"
-                android:layout_weight = "1" />
+                android:layout_weight = "1"
+                android:textAlignment="center" />
 
             <TextView
                 android:text=""
@@ -127,9 +137,41 @@
                 android:textStyle="normal"
                 android:textSize="50sp"
                 android:textColor="@color/colorPrimary"
-                android:layout_weight = "1"/>
+                android:layout_weight = "1"
+                android:textAlignment="viewEnd" />
 
 
         </TableRow>
     </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWordView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:textSize="28sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Word"
+        android:id="@+id/submitButton"
+
+        android:layout_alignTop="@+id/getScoreButton"
+        android:layout_alignLeft="@+id/tvHeader"
+        android:layout_alignStart="@+id/tvHeader"
+        android:layout_alignParentEnd="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Score!"
+        android:id="@+id/getScoreButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tvHeader"
+        android:layout_alignEnd="@+id/tvHeader" />
+
+
 </RelativeLayout>
