@@ -29,7 +29,7 @@ public class GameActivity extends AppCompatActivity {
     @Bind(R.id.tvWordView) TextView mTVWordView;
     @Bind(R.id.submitButton) Button mSubmitButton;
     @Bind(R.id.getScoreButton) Button mGetScoreButton;
-    List<String> enteredWordArray = new ArrayList<String>();
+    ArrayList<String> enteredWordArray = new ArrayList<String>();
 
 //    @Bind(R.id.letter4) TextView mLetter4;
     @Override
@@ -147,6 +147,7 @@ public class GameActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(GameActivity.this, ScoreActivity.class);
+                intent.putStringArrayListExtra("enteredWordArray", enteredWordArray);
                 startActivity(intent);
             }
         });
