@@ -9,11 +9,127 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.epicodus.bogglesolitaire.GameActivity">
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/letter1"
+        android:id="@+id/tvHeader"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="71dp" />
+        android:text="Here are your Letters"
+        android:textSize="28sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvHeader"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:text=""
+                android:id="@+id/letter1"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="50sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight = "1" />
+
+            <TextView
+                android:text=""
+                android:id="@+id/letter2"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:layout_centerHorizontal="true"
+                android:textSize="50sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight = "1" />
+
+            <TextView
+                android:text=""
+                android:id="@+id/letter3"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="50sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight = "1"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text=""
+                android:id="@+id/letter4"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="50sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight = "1" />
+
+            <TextView
+                android:text=""
+                android:id="@+id/letter5"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:layout_centerHorizontal="true"
+                android:textSize="50sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight = "1" />
+
+            <TextView
+                android:text=""
+                android:id="@+id/letter6"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="50sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight = "1"/>
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text=""
+                android:id="@+id/letter7"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="50sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight = "1" />
+
+            <TextView
+                android:text=""
+                android:id="@+id/letter8"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:layout_centerHorizontal="true"
+                android:textSize="50sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight = "1" />
+
+            <TextView
+                android:text=""
+                android:id="@+id/letter9"
+                android:layout_column="4"
+                android:textStyle="normal"
+                android:textSize="50sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight = "1"/>
+
+
+        </TableRow>
+    </TableLayout>
 </RelativeLayout>

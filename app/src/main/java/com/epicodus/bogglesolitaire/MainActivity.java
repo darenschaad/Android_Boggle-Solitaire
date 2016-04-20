@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 String consonant3 = consonantArray[(int)Math.floor(Math.random()*21)];
                 String consonant4 = consonantArray[(int)Math.floor(Math.random()*21)];
                 String consonant5 = consonantArray[(int)Math.floor(Math.random()*21)];
+                String consonant6 = consonantArray[(int)Math.floor(Math.random()*21)];
                 String vowel1 = vowelArray[(int)Math.floor(Math.random()*5)];
                 String vowel2 = vowelArray[(int)Math.floor(Math.random()*5)];
                 String vowel3 = vowelArray[(int)Math.floor(Math.random()*5)];
@@ -47,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("consonant3", consonant3);
                 intent.putExtra("consonant4", consonant4);
                 intent.putExtra("consonant5", consonant5);
+                intent.putExtra("consonant6", consonant6);
+
                 intent.putExtra("vowel1", vowel1);
                 intent.putExtra("vowel2", vowel2);
                 intent.putExtra("vowel3", vowel3);
