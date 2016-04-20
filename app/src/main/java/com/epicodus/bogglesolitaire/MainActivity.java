@@ -11,7 +11,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    private String[] consonantArray = new String [] {"B", "C", "D","F", "G", "H", "J", "K", "L", "M", "N", "P", "Qu", "R", "S", "T", "V", "W", "X", "Y", "Z"};
+    private String[] consonantArray = new String [] {"B", "C", "D","F", "G", "H", "J", "K", "L", "M", "N", "P", "QU", "R", "S", "T", "V", "W", "X", "Y", "Z"};
     private String[] vowelArray = {"A", "E","I","O", "U"};
 
 //    for (int i = 0; i < 6 ; i++) {

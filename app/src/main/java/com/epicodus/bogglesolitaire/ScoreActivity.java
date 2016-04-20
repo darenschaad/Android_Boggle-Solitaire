@@ -31,6 +31,20 @@ public class ScoreActivity extends AppCompatActivity {
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, scoreList);
         mLVWords.setAdapter(adapter);
+        int scoreCounter = 0;
+        for (int i = 0; i < scoreList.size() ; i++) {
+            if (scoreList.get(i).length() > 5) {
+                scoreCounter += 3;
+            }
+            else if (scoreList.get(i).length() > 4) {
+                scoreCounter += 2;
+            }
+            else {
+                scoreCounter += 1;
+            }
+        }
+        String score = Integer.toString(scoreList.size());
+        mTVScore.setText("Your Score is " + scoreCounter);
 
 //        mLVWords.setOnItemClickListener(new AdapterView.OnItemClickListener(){
 //            @Override
