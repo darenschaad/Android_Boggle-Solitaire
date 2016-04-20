@@ -63,54 +63,63 @@ public class GameActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mTVWordView.append(consonant1);
+                mLetter1.setVisibility(View.INVISIBLE);
             }
         });
         mLetter2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mTVWordView.append(vowel1);
+                mLetter2.setVisibility(View.INVISIBLE);
             }
         });
         mLetter3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mTVWordView.append(consonant2);
+                mLetter3.setVisibility(View.INVISIBLE);
             }
         });
         mLetter4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mTVWordView.append(consonant3);
+                mLetter4.setVisibility(View.INVISIBLE);
             }
         });
         mLetter5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mTVWordView.append(consonant4);
+                mLetter5.setVisibility(View.INVISIBLE);
             }
         });
         mLetter6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mTVWordView.append(vowel2);
+                mLetter6.setVisibility(View.INVISIBLE);
             }
         });
         mLetter7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mTVWordView.append(consonant5);
+                mLetter7.setVisibility(View.INVISIBLE);
             }
         });
         mLetter8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mTVWordView.append(consonant6);
+                mLetter8.setVisibility(View.INVISIBLE);
             }
         });
         mLetter9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mTVWordView.append(vowel3);
+                mLetter9.setVisibility(View.INVISIBLE);
             }
         });
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
@@ -123,12 +132,22 @@ public class GameActivity extends AppCompatActivity {
                 for (String i : enteredWordArray){
                     Log.d(TAG, i);
                 }
+                mLetter1.setVisibility(View.VISIBLE);
+                mLetter2.setVisibility(View.VISIBLE);
+                mLetter3.setVisibility(View.VISIBLE);
+                mLetter4.setVisibility(View.VISIBLE);
+                mLetter5.setVisibility(View.VISIBLE);
+                mLetter6.setVisibility(View.VISIBLE);
+                mLetter7.setVisibility(View.VISIBLE);
+                mLetter8.setVisibility(View.VISIBLE);
+                mLetter9.setVisibility(View.VISIBLE);
             }
         });
         mGetScoreButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(GameActivity.this, ScoreActivity.class);
+                startActivity(intent);
             }
         });
 

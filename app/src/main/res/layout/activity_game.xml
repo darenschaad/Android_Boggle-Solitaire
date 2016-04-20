@@ -43,7 +43,8 @@
                 android:textSize="50sp"
                 android:textColor="@color/colorPrimary"
                 android:layout_weight = "1"
-                android:clickable="true" />
+                android:clickable="true"
+                android:textAlignment="center" />
 
             <TextView
                 android:text=""
@@ -63,7 +64,7 @@
                 android:textSize="50sp"
                 android:textColor="@color/colorPrimary"
                 android:layout_weight = "1"
-                android:textAlignment="viewEnd" />
+                android:textAlignment="center" />
 
 
         </TableRow>
@@ -79,7 +80,8 @@
                 android:textStyle="normal"
                 android:textSize="50sp"
                 android:textColor="@color/colorPrimary"
-                android:layout_weight = "1" />
+                android:layout_weight = "1"
+                android:textAlignment="center" />
 
             <TextView
                 android:text=""
@@ -100,7 +102,7 @@
                 android:textSize="50sp"
                 android:textColor="@color/colorPrimary"
                 android:layout_weight = "1"
-                android:textAlignment="viewEnd" />
+                android:textAlignment="center" />
 
 
 
@@ -117,7 +119,8 @@
                 android:textStyle="normal"
                 android:textSize="50sp"
                 android:textColor="@color/colorPrimary"
-                android:layout_weight = "1" />
+                android:layout_weight = "1"
+                android:textAlignment="center" />
 
             <TextView
                 android:text=""
@@ -138,7 +141,7 @@
                 android:textSize="50sp"
                 android:textColor="@color/colorPrimary"
                 android:layout_weight = "1"
-                android:textAlignment="viewEnd" />
+                android:textAlignment="center" />
 
 
         </TableRow>
